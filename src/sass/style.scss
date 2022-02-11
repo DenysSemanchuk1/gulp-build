@@ -1,32 +1,52 @@
 @import "libs/bootstrap-reboot.min";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
 @import "base/variables";
 @import "base/mixins";
+:root {
+  --main-color: #ec644b;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 * {
-  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  font-weight: 500;
+}
+//font-family: 'Roboto', sans-serif;
+// font-family: 'Roboto Condensed', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
 }
 .container {
-  width: 1140px;
+  max-width: 1170px;
   margin: 0 auto;
+  padding: 0 15px;
 }
-.divider {
-  width: 60px;
-  height: 3px;
-  background-color: $main-color;
-  margin: 25px auto 0 auto;
+a {
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+}
+.btn {
+  padding: 17px 40px;
+  text-transform: uppercase;
+  background-color: var(--main-color);
+  color: #fff;
+  margin: 0 auto;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: all 0.6s;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 3px 3px 10px var(--main-color);
+  }
 }
 @import "blocks/promo";
-@import "blocks/title";
-@import "blocks/buttons";
-@import "blocks/sidepanel";
-@import "blocks/menu";
-@import "blocks/about";
-@import "blocks/resume";
-@import "blocks/skills";
-@import "blocks/portfolio";
-@import "blocks/price";
-@import "blocks/contacts";
-@import "blocks/media";
