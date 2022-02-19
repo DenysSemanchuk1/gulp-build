@@ -1,0 +1,36 @@
+.scheme {
+    background-color: #f3f3f3;
+    padding: 40px 0;
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 30px;
+        row-gap: 40px;
+        grid-template-rows: minmax(120px, auto);
+        grid-auto-rows: minmax(120px, auto);
+    }
+    &__item {
+        text-align: center;
+        &-icon {
+            max-width: 61px;
+            margin: 0 auto 15px auto;
+            img {
+                max-width: 100%;
+                object-fit: cover;
+            }
+        }
+        &-title {
+            font-size: 16px;
+            color: var(--main-color);
+            font-weight: 700;
+        }
+        &-text {
+            font-weight: 300;
+            font-size: 14px;
+            color: #3a3a3a;
+        }
+    }
+}
