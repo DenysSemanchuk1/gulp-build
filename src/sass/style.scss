@@ -49,4 +49,13 @@ a {
     box-shadow: 3px 3px 10px var(--main-color);
   }
 }
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 26px;
+  color: #2e2e2e;
+}
 @import "blocks/promo";
+@import "blocks/reasons";
+@import "blocks/work";
