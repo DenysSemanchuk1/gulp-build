@@ -1,4 +1,5 @@
 @import "libs/bootstrap-reboot.min";
+@import "libs/slick.scss";
 @import "base/variables";
 @import "base/mixins";
 :root {
@@ -61,3 +62,8 @@ a {
 @import "blocks/work";
 @import "blocks/price";
 @import "blocks/scheme";
+@import "blocks/reviews";
+@import "blocks/questions";
+@import "blocks/map";
+@import "blocks/footer";
+@import "blocks/media";
